@@ -10,3 +10,4 @@
 |[10448](https://www.acmicpc.net/problem/10448)|유레카 이론|브론즈 1|
 |[2503](https://www.acmicpc.net/problem/2503)|숫자 야구|실버 3|
 |[1018](https://www.acmicpc.net/problem/1018)|체스판 다시 칠하기|실버 4|
+|[1182](https://www.acmicpc.net/problem/1182)|부분 수열의 합|실버 2|
