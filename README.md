@@ -42,3 +42,4 @@
 |문제 번호|문제 이름|난이도|
 |:---:|:---:|:---:|
 |[4796](https://www.acmicpc.net/problem/4796)|캠핑|브론즈 1|
+|[1449](https://www.acmicpc.net/problem/1449)|수리공 항승|실버 3|
