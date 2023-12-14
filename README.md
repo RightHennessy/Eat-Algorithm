@@ -36,6 +36,11 @@
 </div>
 </details>
 
+</br>
+
+**다시 볼 문제**
+
+1931. 회의실 배정
 
 </br>
 
@@ -45,6 +50,6 @@
 |[1449](https://www.acmicpc.net/problem/1449)|수리공 항승|실버 3|
 |[17509](https://www.acmicpc.net/problem/17509)|And the Winner Is... Ourselves!|실버 5|
 |[11047](https://www.acmicpc.net/problem/11047)|동전 0|실버 4|
-|[1931](https://www.acmicpc.net/problem/1931)|회의실 배정|미해결|
+|[1931](https://www.acmicpc.net/problem/1931)|회의실 배정|실버 1|
 |[11000](https://www.acmicpc.net/problem/11000)|강의실 배정|미해결|
 
