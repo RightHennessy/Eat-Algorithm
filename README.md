@@ -38,5 +38,5 @@
 |  [1931](https://www.acmicpc.net/problem/1931)  |         ⭐ 회의실 배정          |  실버 1  |
 | [11000](https://www.acmicpc.net/problem/11000) |         ⭐ 강의실 배정          |  골드 5  |
 |  [1700](https://www.acmicpc.net/problem/1700)  |       ⭐ 멀티탭 스케줄링        |  골드 1  |
-|  [2212](https://www.acmicpc.net/problem/2212)  |              센서               |  미해결  |
+|  [2212](https://www.acmicpc.net/problem/2212)  |              센서               |  골드 5  |
 | [13904](https://www.acmicpc.net/problem/13904) |              과제               |  미해결  |
