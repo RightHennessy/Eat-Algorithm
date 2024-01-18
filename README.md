@@ -40,3 +40,5 @@
 |  [1700](https://www.acmicpc.net/problem/1700)  |       ⭐ 멀티탭 스케줄링        |  골드 1  |
 |  [2212](https://www.acmicpc.net/problem/2212)  |              센서               |  골드 5  |
 | [13904](https://www.acmicpc.net/problem/13904) |             ⭐ 과제             |  골드 3  |
+| [15478](https://www.acmicpc.net/problem/15478) |           Rest Stops            |  골드 5  |
+|  [1493](https://www.acmicpc.net/problem/1493)  |           박스 채우기           |  미해결  |
