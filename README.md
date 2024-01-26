@@ -62,8 +62,8 @@
 | :------------------------------------------: | :--------------: | :----: |
 | [1629](https://www.acmicpc.net/problem/1629) |     ⭐ 곱셈      | 실버 1 |
 | [2630](https://www.acmicpc.net/problem/2630) | ⭐ 색종이 만들기 | 실버 2 |
-| [1992](https://www.acmicpc.net/problem/1992) |    쿼드 트리     | 실버1  |
-| [1780](https://www.acmicpc.net/problem/1780) |   종이의 개수    | 미해결 |
+| [1992](https://www.acmicpc.net/problem/1992) |    쿼드 트리     | 실버 1 |
+| [1780](https://www.acmicpc.net/problem/1780) |   종이의 개수    | 실버 2 |
 | [2104](https://www.acmicpc.net/problem/2104) | 부분배열 고르기  | 미해결 |
 | [1725](https://www.acmicpc.net/problem/1725) |    히스토그램    | 미해결 |
 | [1074](https://www.acmicpc.net/problem/1074) |        Z         | 미해결 |
