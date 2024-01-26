@@ -58,13 +58,14 @@
 분할 정복은 그냥 풀었을 때보다 이미 풀린 문제들을 합치는 것이 월등히 빠른 경우에 좋다. </br>
 예) 병합 정렬, 이분 탐색, 거듭제곱 연산
 
-|                  문제 번호                   |    문제 이름    | 난이도 |
-| :------------------------------------------: | :-------------: | :----: |
-| [1629](https://www.acmicpc.net/problem/1629) |     ⭐ 곱셈     | 실버 1 |
-| [2104](https://www.acmicpc.net/problem/2104) | 부분배열 고르기 | 미해결 |
-| [1725](https://www.acmicpc.net/problem/1725) |   히스토그램    | 미해결 |
-| [1780](https://www.acmicpc.net/problem/1780) |   종이의 개수   | 미해결 |
-| [1992](https://www.acmicpc.net/problem/1992) |    쿼드 트리    | 미해결 |
-| [1074](https://www.acmicpc.net/problem/1074) |        Z        | 미해결 |
-| [2447](https://www.acmicpc.net/problem/2447) |   별 찍기 10    | 미해결 |
-| [2339](https://www.acmicpc.net/problem/2339) |   석판 자르기   | 미해결 |
+|                  문제 번호                   |    문제 이름     | 난이도 |
+| :------------------------------------------: | :--------------: | :----: |
+| [1629](https://www.acmicpc.net/problem/1629) |     ⭐ 곱셈      | 실버 1 |
+| [2630](https://www.acmicpc.net/problem/2630) | ⭐ 색종이 만들기 | 실버 2 |
+| [1992](https://www.acmicpc.net/problem/1992) |    쿼드 트리     | 미해결 |
+| [1780](https://www.acmicpc.net/problem/1780) |   종이의 개수    | 미해결 |
+| [2104](https://www.acmicpc.net/problem/2104) | 부분배열 고르기  | 미해결 |
+| [1725](https://www.acmicpc.net/problem/1725) |    히스토그램    | 미해결 |
+| [1074](https://www.acmicpc.net/problem/1074) |        Z         | 미해결 |
+| [2447](https://www.acmicpc.net/problem/2447) |    별 찍기 10    | 미해결 |
+| [2339](https://www.acmicpc.net/problem/2339) |   석판 자르기    | 미해결 |
