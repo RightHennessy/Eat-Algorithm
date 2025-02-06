@@ -1,34 +1,22 @@
-# 시간초과 -> 삼각수 합을 1000번 index까지 미리구해둬서..
-## -> 삼각수가 1000이하인 44번까지만 미리 만들어두면 된다고 ~
-
-import sys
 from itertools import combinations_with_replacement
-
+import sys
 input = sys.stdin.readline
 
-nums = []
-for i in range(1,45):
-    nums.append(i*(i+1)//2)
-num_max = 44
+T = []
+s = 0
+for i in range(1,500):
+    s += i
+    if s > 1000:
+        break
+    T.append(s)
 
-ans = []
-n = int(input())
-for idx in range(n):
-    m = int(input())
-    for i in range(num_max):
-        for j in range(i, num_max):
-            for k in range(j, num_max):
-                if nums[i] >= m :
-                    ans.append(0)
-                    break
-                elif nums[i] + nums[j] + nums[k] == m:
-                    ans.append(1)
-                    break
-            if len(ans) > idx:
-                break
-        if len(ans) > idx:
-                break
+cases = combinations_with_replacement(T, 3)
+ans = [0 for _ in range(1001)]
+for c in cases:
+    tmp = sum(c)
+    if tmp <= 1000:
+        ans[tmp] = 1
 
-for a in ans:
-    print(a)
-    
+N = int(input())
+for _ in range(N):
+    print(ans[int(input())])
