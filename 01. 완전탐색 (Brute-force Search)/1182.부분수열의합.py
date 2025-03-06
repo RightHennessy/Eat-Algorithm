@@ -1,19 +1,17 @@
-# 뭐여.. 완전 탐색 문제 중에 제일 쉬웠던 문제.. 이게 맞나?
-
 import sys
 from itertools import combinations
 
 input = sys.stdin.readline
-n, s = list(map(int, input().split(' ')))
+
+N, M = list(map(int, input().split(' ')))
 nums = list(map(int, input().split(' ')))
 
-cases = []
-for i in range(1, n+1):
-    cases += combinations(nums, i)
+ans = 0
 
-answer = 0
-for case in cases:
-    if sum(case) == s:
-        answer += 1
+for i in range(1, N+1):
+    cases = combinations(nums, i)
+    for c in cases:
+        if sum(c) == M:
+            ans += 1
 
-print(answer)
+print(ans)

@@ -1,35 +1,35 @@
-# 틀렸던 이유 : 마지막 원소 판단 기준...
-# -> 똑같은 조건이 두번 들어오면 2번 추가함.. 이런..
-# 해결 : 1. 앞으로는 마지막 원소 판단을 idx로 하던지 2. 정답을 set으로 만들자(중복 제거 확실히)
-
 import sys
 from itertools import permutations
 
-def compare(x, y):
-    strike = 0
-    ball = 0
-    for i in range(3):
-        if x[i] == y[i]:
-            strike += 1
-        elif x[i] in y:
-            ball += 1
-    return strike, ball
-
 input = sys.stdin.readline
+nums = [x for x in range(1,10)]
+cases = permutations(nums, 3)
+tries = []
 
-n = int(input())
-games = []
-cases = permutations([x for x in range(1, 10)], 3)
-ans = []
+def solution():
+    global cases
+    N = int(input())
+    for _ in range(N):
+        # 0:num 1:strike 2:ball
+        tries.append(list(map(int, input().split(' '))))
 
-for _ in range(n):
-    games.append(list(map(int, input().split(' '))))
+    for t in tries:
+        number = list(map(int, str(t[0])))
+        tmp = []
+        for c in cases:
+            if check(c, number) == (t[1], t[2]):
+                tmp.append(c)
+        cases = tmp
 
-for item in cases:
-    for idx, game in enumerate(games):
-        if (game[1], game[2]) != compare(list(item), list(map(int, list(str(game[0]))))):
-            break
-        if idx + 1 == len(games):
-            ans.append(item)
+    print(len(cases))
+    return
 
-print(len(ans))
+def check(a, b):
+    strike_count = 0
+    ball_count = 0 
+    for i in range(3):
+        if a[i] == b[i]: strike_count += 1
+        elif a[i] in b: ball_count += 1
+    return (strike_count, ball_count)
+
+solution()
