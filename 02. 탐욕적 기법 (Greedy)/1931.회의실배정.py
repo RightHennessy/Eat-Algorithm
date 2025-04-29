@@ -1,23 +1,19 @@
-# 그리디의 핵심을 나타내는 문제인듯..
-## 옛날엔 이 비슷한 문제를 풀었는데 왜 지금은 이 포인트를 생각해내지 못했는가.. (좌절)
-
 import sys
-
 input = sys.stdin.readline
 
-n = int(input())
-times = []
-for _ in range(n):
-    start, end = list(map(int, input().split(" ")))
-    times.append([start, end])
+ans = 0
+N = int(input())
 
-times.sort(key = lambda x: (x[1], x[0]))
+values = []
+for _ in range(N):
+    values.append(list(map(int, input().strip().split(' '))))
 
-last = times[0][1]
-answer = 1
-for time in times[1:]:
-    if time[0] >= last:
-        last = time[1]
-        answer += 1
+# 아마 시작, 끝이 같은 경우가 있을듯
+values.sort(key = lambda x: (x[1], x[0]))
 
-print(answer)
+time = 0
+for i in range(N):
+    if time <= values[i][0]:
+        ans += 1
+        time = values[i][1]
+print(ans)
