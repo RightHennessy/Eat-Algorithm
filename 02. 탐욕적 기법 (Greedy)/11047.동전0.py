@@ -1,18 +1,15 @@
 import sys
-
 input = sys.stdin.readline
 
-n, k = list(map(int, input().split(' ')))
+ans = 0
+N, K = list(map(int, input().strip().split(' ')))
 
-coins = []
-for _ in range(n):
-    coins.append(int(input()))
-coins.sort(reverse=True)
+values = []
+for _ in range(N):
+    values.append(int(input()))
 
-answer = 0
-for coin in coins:
-    if k//coin > 0:
-        answer += (k//coin)
-        k %= coin
-
-print(answer)
+for i in range(N-1, -1, -1):
+    if values[i] <= K:
+        ans += K//values[i]
+        K %= values[i]
+print(ans)
