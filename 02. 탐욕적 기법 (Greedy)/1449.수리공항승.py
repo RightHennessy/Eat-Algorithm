@@ -1,16 +1,14 @@
 import sys
-
 input = sys.stdin.readline
 
-n, l = list(map(int, input().split(' ')))
-holes = list(map(int, input().split(' ')))
+N, L = list(map(int, input().strip().split(' ')))
+holes = list(map(int, input().strip().split(' ')))
 holes.sort()
 
-last = -1
-cnt = 0
-for hole in holes:
-    if last < hole + 0.5:
-        cnt += 1
-        last = hole - 0.5 + l
-
-print(cnt)
+ans = 1
+now = holes[0] + L - 1
+for i in range(1, len(holes)):
+    if holes[i] > now:
+        ans += 1
+        now = holes[i] + L -1
+print(ans)
