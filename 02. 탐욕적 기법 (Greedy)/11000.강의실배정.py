@@ -1,24 +1,20 @@
-# heapq.. 파이썬 왤케 잘만들어 놨는데 ~
-
-import sys
 import heapq
-
+import sys
 input = sys.stdin.readline
 
-n = int(input())
-times = []
-for _ in range(n):
-    start, end = list(map(int, input().split(" ")))
-    times.append([start, end])
+N = int(input())
 
-times.sort(key = lambda x: (x[0], x[1]))
+values = []
+for _ in range(N):
+    values.append(list(map(int, input().strip().split(' '))))
 
-time_line = [times[0][1]]
+values.sort(key = lambda x: (x[0], x[1]))
+rooms = [0]
+heapq.heapify(rooms)
 
-for time in times[1:]:
-    if time[0] >= time_line[0]:
-        heapq.heappop(time_line)
-    heapq.heappush(time_line, time[1])
-
-
-print(len(time_line))
+for s, t in values:
+    now = rooms[0]
+    if s >= now:
+        heapq.heappop(rooms)
+    heapq.heappush(rooms, t)
+print(len(rooms))
